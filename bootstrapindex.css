@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+    color: white;
+    background-color: #303030;
+    overflow: auto;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 10px;
+    padding-top: 55px;
+    padding-bottom: 50px; /* Height of the footer */
+}
+
+.accordion {
+    background-color: #303030;
+}
+
+#headerStuff {
+    padding-left: 5x;
+}
+
+#footerId {
+    padding-top: 5px;
+}
