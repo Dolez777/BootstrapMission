@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-bottom: 60px;
+}
+
+/* breakpoints are customizable */
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px,
+);
+
+.card-img-left {
+    width: 50px;
+}
+
+.pagination {
+    width: 50%;
+    margin: 0;
+    display: block;
+}
+
+.card {
+    margin-right: auto;
+    display: table;
+}
+
+#footer {
+    bottom: 0;
+    flex: 0 0 50px;
+    height: 65px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    margin-top: auto;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
