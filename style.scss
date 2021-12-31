@@ -1,8 +1,10 @@
-.container-fluid-nav div {
-    display: flex;
-    justify-content: space-around;
+#headerStuff {
 }
 
+.container-fluid {
+}
+.nav-item {
+}
 /* breakpoints are customizable */
 $grid-breakpoints: (
     xs: 0,
@@ -12,3 +14,13 @@ $grid-breakpoints: (
     xl: 1200px,
     xxl: 1400px,
 );
+
+.accordion {
+}
+
+div + li {
+}
+
+#navbarNav {
+    center: 0;
+}
