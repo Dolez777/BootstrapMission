@@ -1,182 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tagsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- The page supports both dark and light color schemes,
+<head>
+    <!-- Required meta tagsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- The page supports both dark and light color schemes,
          and the page author prefers / default is light. -->
-        <meta name="color-scheme" content="light dark" />
+    <meta name="color-scheme" content="light dark" />
 
-        <!-- If `prefers-color-scheme` is not supported, fall back to light mode.
+    <!-- If `prefers-color-scheme` is not supported, fall back to light mode.
          In this case, inject the `light` CSS before the others, with
          no media filter so that it will be downloaded with highest priority. -->
-        <script>
-            if (
-                window.matchMedia("(prefers-color-scheme: dark)").media ===
-                "not all"
-            ) {
-                document.documentElement.style.display = "none";
-                document.head.insertAdjacentHTML(
-                    "beforeend",
-                    '<link id="css" rel="stylesheet" href="../dist/css/bootstrap.css" onload="document.documentElement.style.display = \'\'">'
-                );
-            }
-        </script>
-        <!-- Load the alternate CSS first ...
+    <script>
+        if (
+            window.matchMedia("(prefers-color-scheme: dark)").media ===
+            "not all"
+        ) {
+            document.documentElement.style.display = "none";
+            document.head.insertAdjacentHTML(
+                "beforeend",
+                '<link id="css" rel="stylesheet" href="../dist/css/bootstrap.css" onload="document.documentElement.style.display = \'\'">'
+            );
+        }
+    </script>
+    <!-- Load the alternate CSS first ...
          in this case the Bootstrap-Dark Variant CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-night.min.css"
-            rel="stylesheet"
-            media="(prefers-color-scheme: dark)"
-        />
-        <!-- and then the primary CSS last ...
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-night.min.css" rel="stylesheet"
+        media="(prefers-color-scheme: dark)" />
+    <!-- and then the primary CSS last ...
          in this case the (original) Bootstrap Variant CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            media="(prefers-color-scheme: light)"
-        />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="style.scss">
-        <link rel="stylesheet" href="styles/potatoOneStyle.scss">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        media="(prefers-color-scheme: light)" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.scss">
 
-        <title>Teemun CSGO</title>
-    </head>
+
+    <title>CSGO</title>
+</head>
+
+<body>
+
     <body>
-        <body>
-            <header id="header">
+        <header id="header">
             <nav class="navbar  navbar-expand-sm navbar-dark bg-dark">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"> Teemun CSGO</a>
-                <button class="navbar-toggler" type="button"
-                  data-bs-toggle="collapse" 
-                  data-bs-target="#navbarNav"
-                  aria-controls="navbarNav" 
-                  aria-expanded="false" 
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.html">Home </a>
-                    </li>
-                   
-                    <li class="nav-item">
-                      <a class="nav-link" href="potato.html">Sivu2</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="potatoTwo.html">Sivu3</a>
-                    </li>
-                
-                  </ul>
-                </div>
-            </header>
-              </nav>
-            
-            
-           
-              <div class="card" style="width: 18rem;" id="stickerCard1">
+                    <a class="navbar-brand" href="index.html"> Teemun CSGO</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="potato.html">Sivu2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="potatoTwo.html">Sivu3</a>
+                            </li>
+
+                        </ul>
+                    </div>
+        </header>
+        </nav>
+
+        <div class="container" id="skinInfo">
+            <div class=".col-md-4 .ms-auto" "> </div>
+            </div>
+
+           <div class=" card-columns mx-auto d-flex justify-content-center col-12" id="stickerCard1">
+
                 <img class="card-img-top" src="images/chrome_3qxJxSDYeZ.png" alt="Kuva pikseli tarrasta">
-                <div class="card-body">
-                  <p class="card-text">Kuvassa oleva pikseli tarra pikseli aseeseen CSGO:ssa maksaa 45000 Dollaria.</p>
-                  <a href="https://cantry.dev/katowice/14/prices">Hinnat täältä</a>
-                </div>
-              </div>         
-   
-            <div class="accordion" id="accordionPanelsStayOpen">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <button
-                            class="accordion-button"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseOne"
-                            aria-expanded="true"
-                            aria-controls="panelsStayOpen-collapseOne"
-                        >
-                            Accordion Item #1
-                        </button>
-                    </h2>
-                    <div
-                        id="panelsStayOpen-collapseOne"
-                        class="accordion-collapse collapse show"
-                        aria-labelledby="panelsStayOpen-headingOne"
-                    >
-            
-                        <div class="accordion-body">
-                          Ensimmäiset skinit julkaistiin 13.08.2013 "CS:GO Weapon Case" laatikolla. Lähde: <a href="https://counterstrike.fandom.com/wiki/CSGO_Weapon_Case">CSGO wiki</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                        <button
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseTwo"
-                        >
-                            Accordion Item #2
-                        </button>
-                    </h2>
-                    <div
-                        id="panelsStayOpen-collapseTwo"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingTwo"
-                    >
-                        <div class="accordion-body">
-                            <strong
-                                >This is the second item's accordion body.</strong
-                            >
-                            It is hidden by default, until the collapse plugin adds
-                            the appropriate classes that we use to style each
-                            element. These classes control the overall appearance,
-                            as well as the showing and hiding via CSS transitions.
-                            You can modify any of this with custom CSS or overriding
-                            our default variables. It's also worth noting that just
-                            about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does
-                            limit overflow.
-                        </div>
-                    </div>
-                </div>
-               
-                    
-                    </div>
+                <div class="card-body" id="cardBody">
+                    <p class="card-text">Kuvassa oleva pikseli tarra pikseli aseeseen CSGO:ssa maksaa 45000 Dollaria.
+                    </p>
+                    <a href="https://cantry.dev/katowice/14/prices">Hinnat täältä</a>
                 </div>
             </div>
 
-            <nav aria-label="Page navigation example" class="">
-                <ul class="pagination">
 
-                  <li class="page-item"><a class="page-link" href="index.html">1</a></li>
-                  <li class="page-item"><a class="page-link" href="potato.html">2</a></li>
-                  <li class="page-item"><a class="page-link" href="potatoTwo.html">3</a></li>
-                 
-                </ul>
-              </nav>
+            <div class="accordion" id="accordionPanelsStayOpen">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Historia.
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+
+                        <div class="accordion-body">
+                            Ensimmäiset skinit julkaistiin 13.08.2013 "CS:GO Weapon Case" laatikolla. Lähde: <a
+                                href="https://counterstrike.fandom.com/wiki/CSGO_Weapon_Case">CSGO wiki</a>
+                        </div>
+                    </div>
+                </div>
 
 
-            <footer  class="text-center fixed-bottom text-white" id="footerId">
-            
-                <div class="text-center p-3  border" id="footerPics" >
-                    Tekijän github:
-                    <a class="text-white" href="https://github.com/Dolez777">Teemu Välimäki</a>
-                  </div>
-             
-              </footer>
-            <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-                crossorigin="anonymous"
-            ></script>
 
-            
+
+            </div>
+        </div>
+        </div>
+
+        <nav aria-label="Page navigation example" class="">
+            <ul class="pagination">
+
+                <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="potato.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="potatoTwo.html">3</a></li>
+
+            </ul>
+        </nav>
+
+
+        <footer class="text-center fixed-bottom text-white" id="footerId">
+
+            <div class="text-center p-3  border" id="footerPics">
+                Tekijän nimi ja github:
+                <a class="text-white" href="https://github.com/Dolez777">Teemu Välimäki</a>
+            </div>
+
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+
     </body>
+
 </html>
