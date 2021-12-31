@@ -1,53 +1,83 @@
 body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  margin-bottom: 60px;
 }
 
 #stickerCard1 {
-	align-items: center;
-	width: 32rem;
-	flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #skinInfo {
-	text-align: right;
+  text-align: right;
 }
 
 #footer {
-	bottom: 0;
-	flex: 0 0 50px;
-
-	left: 0;
-	position: fixed;
-	width: 100%;
-	margin-top: auto;
-	box-sizing: border-box;
-	display: table;
+  bottom: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50px;
+          flex: 0 0 50px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  margin-top: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: table;
 }
 
 div {
-	display: block;
+  display: block;
 }
 
 #navLinks {
-	align-items: center;
-	width: 100%;
-	text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  text-align: center;
 }
+
 .pagination {
-	justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .carousel-inner img {
-	display: flex;
-	margin: auto;
-	align-items: center;
-	justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#skinInfo {
+  text-align: center;
 }
 
 #carouselA {
-	max-width: 40rem;
-	margin: bottom 5px;
+  max-width: 40rem;
+  margin: bottom 5px;
 }
+
+/* breakpoints are customizable */
+/*# sourceMappingURL=style.css.map */

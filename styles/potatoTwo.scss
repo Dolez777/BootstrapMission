@@ -1,0 +1,13 @@
+$blueColor: #2287c2;
+
+$font-sizeP: 1.2em;
+
+div > p {
+	font-size: $font-sizeP;
+	text-align: center;
+	color: $blueColor;
+}
+
+div + p {
+	text-align: center;
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,GAAG,GAAG,CAAC,CAAC;EACP,SAAS,EAHG,KAAK;EAIjB,UAAU,EAAE,MAAM;EAClB,KAAK,EAPM,OAAO;CAQlB;;AAED,AAAA,GAAG,GAAG,CAAC,CAAC;EACP,UAAU,EAAE,MAAM;CAClB",
+    "sources": [
+        "potatoTwo.scss"
+    ],
+    "names": [],
+    "file": "potatoTwo.css"
+}
